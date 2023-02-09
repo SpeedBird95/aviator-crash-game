@@ -7,6 +7,9 @@ export default {
   component: BaseTemplate,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
+  parameters: {
+    actions: { handles: ['click', '.btn'] },
+  },
 } as ComponentMeta<typeof BaseTemplate>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
