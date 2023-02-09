@@ -1,3 +1,5 @@
+import Graphic from '../../Graphic/aviator/Graphic';
+import { mockGraphicProps } from '../../Graphic/aviator/Graphic.mocks';
 import styles from './BaseTemplate.module.css';
 
 /* IF COMPONENT DOESN'T USE PROPS LEAVE THIS EMPTY */
@@ -6,7 +8,13 @@ export interface IBaseTemplate {
 }
 
 const BaseTemplate: React.FC<IBaseTemplate> = ({ sampleTextProp }) => {
-  return <div className={styles.container}>{sampleTextProp}</div>;
+  return (
+    <div className={styles.container}>
+      <p>{sampleTextProp}</p>
+      <br />
+      <Graphic {...mockGraphicProps.alt} />
+    </div>
+  );
 };
 
 export default BaseTemplate;
