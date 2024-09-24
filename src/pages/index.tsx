@@ -1,5 +1,4 @@
-import { mockGraphicProps } from '@/components/Graphic/Graphic.mocks.ts';
-import Graphic from '@/components/Graphic/Graphic.tsx';
+import Graphic, { mockGraphicProps } from '@/components/Graphic/Graphic';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
