@@ -1,4 +1,5 @@
-import Graphic, { mockGraphicProps } from '@/components/Graphic/Graphic';
+import Graphic from '@/components/Graphic/aviator/Graphic';
+import { mockGraphicProps } from '@/components/Graphic/aviator/Graphic.mocks';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
